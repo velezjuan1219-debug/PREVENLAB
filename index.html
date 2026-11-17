@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PREVENLAB: plataforma educativa para la identificación y prevención de riesgos laborales.">
+    <title>PREVENLAB | Prevención de Riesgos Laborales</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">P</div>
+                <div>
+                    <h2>PREVENLAB</h2>
+                    <span>Seguridad y Salud</span>
+                </div>
+            </div>
+
+            <div class="sidebar-label">MENÚ PRINCIPAL</div>
+
+            <nav class="navigation">
+                <button class="nav-link active" data-section="inicio">
+                    <span>⌂</span> Inicio
+                </button>
+
+                <button class="nav-link" data-section="biomecanico">
+                    <span>⚙</span> Riesgo biomecánico
+                </button>
+
+                <button class="nav-link" data-section="fisico">
+                    <span>◈</span> Riesgo físico
+                </button>
+
+                <button class="nav-link" data-section="psicosocial">
+                    <span>♡</span> Riesgo psicosocial
+                </button>
+
+                <button class="nav-link" data-section="historial">
+                    <span>▤</span> Historial
+                </button>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="status-dot"></div>
+                <div>
+                    <strong>Sistema activo</strong>
+                    <small>Versión educativa 1.0</small>
+                </div>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <span class="breadcrumb">PREVENLAB / Plataforma</span>
+                    <h1 id="page-title">Panel principal</h1>
+                </div>
+
+                <div class="topbar-right">
+                    <span class="system-label">● Plataforma de prevención</span>
+                </div>
+            </header>
+
+            <!-- INICIO -->
+            <section class="content-section active" id="inicio">
+
+                <div class="welcome-banner">
+                    <div>
+                        <span class="eyebrow">PREVENCIÓN INTELIGENTE</span>
+                        <h2>Identifica los riesgos.<br>Protege tu bienestar.</h2>
+                        <p>
+                            Evalúa factores de riesgo laboral y conoce recomendaciones
+                            para promover ambientes de trabajo más seguros y saludables.
+                        </p>
+                        <button class="primary-button" data-go="biomecanico">
+                            Comenzar evaluación →
+                        </button>
+                    </div>
+
+                    <div class="welcome-graphic">🛡️</div>
+                </div>
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Módulos de evaluación</h2>
+                        <p>Selecciona el tipo de riesgo que deseas identificar.</p>
+                    </div>
+                </div>
+
+                <div class="module-grid">
+
+                    <article class="module-card biomechanical">
+                        <div class="module-icon">🧍</div>
+                        <span class="module-tag">MÓDULO 01</span>
+                        <h3>Riesgo biomecánico</h3>
+                        <p>
+                            Identifica posturas prolongadas, movimientos repetitivos
+                            y manipulación manual de cargas.
+                        </p>
+                        <button class="text-button" data-go="biomecanico">
+                            Evaluar módulo →
+                        </button>
+                    </article>
+
+                    <article class="module-card physical">
+                        <div class="module-icon">🔊</div>
+                        <span class="module-tag">MÓDULO 02</span>
+                        <h3>Riesgo físico</h3>
+                        <p>
+                            Reconoce exposición a ruido, iluminación inadecuada,
+                            temperaturas y vibraciones.
+                        </p>
+                        <button class="text-button" data-go="fisico">
+                            Evaluar módulo →
+                        </button>
+                    </article>
+
+                    <article class="module-card psychosocial">
+                        <div class="module-icon">🧠</div>
+                        <span class="module-tag">MÓDULO 03</span>
+                        <h3>Riesgo psicosocial</h3>
+                        <p>
+                            Explora factores relacionados con carga laboral,
+                            estrés, comunicación y ambiente de trabajo.
+                        </p>
+                        <button class="text-button" data-go="psicosocial">
+                            Evaluar módulo →
+                        </button>
+                    </article>
+
+                </div>
+
+                <div class="information-panel">
+                    <div class="info-icon">ℹ</div>
+                    <div>
+                        <h3>¿Cómo funciona PREVENLAB?</h3>
+                        <p>
+                            Responde las listas de verificación de cada módulo.
+                            El sistema analizará tus respuestas, mostrará un nivel
+                            orientativo de prioridad y ofrecerá recomendaciones preventivas.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- MÓDULO BIOMECÁNICO -->
+            <section class="content-section" id="biomecanico">
+                <div class="module-header">
+                    <span class="module-tag">MÓDULO 01</span>
+                    <h2>Evaluación del riesgo biomecánico</h2>
+                    <p>
+                        Identifica condiciones relacionadas con posturas,
+                        movimientos repetitivos y manipulación de cargas.
+                    </p>
+                </div>
+
+                <div class="checklist-container">
+                    <div class="checklist-title">
+                        <h3>Lista de verificación</h3>
+                        <span>Responde según las condiciones observadas.</span>
+                    </div>
+                    <form id="form-biomecanico"></form>
+                    <div class="form-actions">
+                        <button class="primary-button evaluate-button" data-module="biomecanico">
+                            Evaluar respuestas →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="result-container" id="resultado-biomecanico"></div>
+            </section>
+
+            <!-- MÓDULO FÍSICO -->
+            <section class="content-section" id="fisico">
+                <div class="module-header">
+                    <span class="module-tag">MÓDULO 02</span>
+                    <h2>Evaluación del riesgo físico</h2>
+                    <p>
+                        Reconoce posibles exposiciones a agentes físicos
+                        presentes en el ambiente laboral.
+                    </p>
+                </div>
+
+                <div class="checklist-container">
+                    <div class="checklist-title">
+                        <h3>Lista de verificación</h3>
+                        <span>Responde según las condiciones observadas.</span>
+                    </div>
+                    <form id="form-fisico"></form>
+                    <div class="form-actions">
+                        <button class="primary-button evaluate-button" data-module="fisico">
+                            Evaluar respuestas →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="result-container" id="resultado-fisico"></div>
+            </section>
+
+            <!-- MÓDULO PSICOSOCIAL -->
+            <section class="content-section" id="psicosocial">
+                <div class="module-header">
+                    <span class="module-tag">MÓDULO 03</span>
+                    <h2>Evaluación de factores psicosociales</h2>
+                    <p>
+                        Explora factores del entorno laboral relacionados con
+                        las exigencias, el tiempo y las relaciones de trabajo.
+                    </p>
+                </div>
+
+                <div class="confidentiality-note">
+                    🔒 Las respuestas deben tratarse con confidencialidad.
+                    Este módulo es orientativo y no realiza diagnósticos psicológicos.
+                </div>
+
+                <div class="checklist-container">
+                    <div class="checklist-title">
+                        <h3>Lista de verificación</h3>
+                        <span>Responde de acuerdo con tu experiencia laboral.</span>
+                    </div>
+                    <form id="form-psicosocial"></form>
+                    <div class="form-actions">
+                        <button class="primary-button evaluate-button" data-module="psicosocial">
+                            Evaluar respuestas →
+                        </button>
+                    </div>
+                </div>
+
+                <div class="result-container" id="resultado-psicosocial"></div>
+            </section>
+
+            <!-- HISTORIAL -->
+            <section class="content-section" id="historial">
+                <div class="module-header">
+                    <span class="module-tag">REGISTROS</span>
+                    <h2>Historial de evaluaciones</h2>
+                    <p>
+                        Consulta los resultados guardados en este dispositivo.
+                    </p>
+                </div>
+
+                <div class="history-container">
+                    <div class="history-heading">
+                        <h3>Evaluaciones realizadas</h3>
+                        <button class="secondary-button" id="clear-history">
+                            Limpiar historial
+                        </button>
+                    </div>
+
+                    <div id="history-list">
+                        <p class="empty-message">
+                            Todavía no hay evaluaciones registradas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="main-footer">
+                <p>PREVENLAB © 2026 | Proyecto educativo de Seguridad y Salud en el Trabajo.</p>
+                <p>Herramienta de orientación preventiva. No reemplaza una evaluación profesional del SG-SST.</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <!-- ARCHIVOS JAVASCRIPT -->
+    <script src="js/checklist.js"></script>
+    <script src="js/evaluation.js"></script>
+    <script src="js/reports.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>
